@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-image: url(sources/tiger.jpg);
+  background-size: cover;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.play-pouse-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.rgb-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hue 5s infinite linear;
+}
+
+@keyframes hue {
+  from { filter: hue-rotate(0deg); }
+  to { filter: hue-rotate(360deg); }
+}
+
+.carousel {
+  position: relative;
+  max-width: 700px;
+  margin: 2rem auto;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 1rem;
+}
+
+.slide img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.6);
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.nav.prev {
+  left: 10px;
+}
+
+.nav.next {
+  right: 10px;
+}
+
+.reveal-button {
+  text-align: center;
+  margin: 2rem;
+  font-size: 1.5rem;
+  padding: 1rem;
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+  color: white;
+  cursor: pointer;
+  border-radius: 15px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.letter {
+  display: none;
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  margin: 2rem auto;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  background: #eee;
+}
+
+#typed {
+  display: inline;
+  white-space: pre-wrap;
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.typed-cursor {
+  font-weight: 300;
+  font-size: 1.2em;
+  color: #333;
+  animation: blink 0.7s infinite;
+  margin-left: 2px;
+}
